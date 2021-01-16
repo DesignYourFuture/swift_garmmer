@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		367000F925B2DE9E0008B887 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367000F825B2DE9E0008B887 /* main.swift */; };
+		3670011425B2F3B10008B887 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670011325B2F3B10008B887 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,10 @@
 /* Begin PBXFileReference section */
 		367000F525B2DE9E0008B887 /* swift_garmmer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_garmmer; sourceTree = BUILT_PRODUCTS_DIR; };
 		367000F825B2DE9E0008B887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3670010225B2ED650008B887 /* 조건문1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "조건문1.swift"; sourceTree = "<group>"; };
+		3670010C25B2F04A0008B887 /* swift_garmmer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_garmmer-Bridging-Header.h"; sourceTree = "<group>"; };
+		3670010D25B2F04A0008B887 /* 조건문2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "조건문2.swift"; sourceTree = "<group>"; };
+		3670011325B2F3B10008B887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,22 @@
 		367000F725B2DE9E0008B887 /* swift_garmmer */ = {
 			isa = PBXGroup;
 			children = (
+				3670010025B2ED390008B887 /* 조건문 */,
 				367000F825B2DE9E0008B887 /* main.swift */,
 			);
 			path = swift_garmmer;
+			sourceTree = "<group>";
+		};
+		3670010025B2ED390008B887 /* 조건문 */ = {
+			isa = PBXGroup;
+			children = (
+				3670010225B2ED650008B887 /* 조건문1.swift */,
+				3670010D25B2F04A0008B887 /* 조건문2.swift */,
+				3670010C25B2F04A0008B887 /* swift_garmmer-Bridging-Header.h */,
+				3670011325B2F3B10008B887 /* main.swift */,
+			);
+			name = "조건문";
+			path = "조건문";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +110,7 @@
 				TargetAttributes = {
 					367000F425B2DE9E0008B887 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -119,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367000F925B2DE9E0008B887 /* main.swift in Sources */,
+				3670011425B2F3B10008B887 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +262,18 @@
 		367000FD25B2DE9E0008B887 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38PD5AHVVF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_garmmer/조건문/swift_garmmer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -255,10 +281,17 @@
 		367000FE25B2DE9E0008B887 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38PD5AHVVF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_garmmer/조건문/swift_garmmer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
