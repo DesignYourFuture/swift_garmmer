@@ -8,4 +8,5 @@
 import Foundation
 
 print("Hello, World!")
+print("깃허브 연동 도대체 어떻게 xcode")
 
