@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3670012825B337DA0008B887 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3670012725B337DA0008B887 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		367000F325B2DE9E0008B887 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -32,7 +28,11 @@
 		3670011725B32C8B0008B887 /* 조건문4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "조건문4.swift"; sourceTree = "<group>"; };
 		3670011C25B330920008B887 /* 조건문6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "조건문6.swift"; sourceTree = "<group>"; };
 		3670012225B336B60008B887 /* 반복문1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "반복문1.swift"; sourceTree = "<group>"; };
-		3670012725B337DA0008B887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3670012725B337DA0008B887 /* 반복문3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "반복문3.swift"; sourceTree = "<group>"; };
+		369A484125B3FD0D00F948F9 /* 반복문4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "반복문4.swift"; sourceTree = "<group>"; };
+		369A484625B4006400F948F9 /* 반복문6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "반복문6.swift"; sourceTree = "<group>"; };
+		369A484B25B435A700F948F9 /* 반복문10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "반복문10.swift"; sourceTree = "<group>"; };
+		369A485025B438D900F948F9 /* 조건문14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "조건문14.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				3670012225B336B60008B887 /* 반복문1.swift */,
-				3670012725B337DA0008B887 /* main.swift */,
+				3670012725B337DA0008B887 /* 반복문3.swift */,
+				369A484125B3FD0D00F948F9 /* 반복문4.swift */,
+				369A484625B4006400F948F9 /* 반복문6.swift */,
+				369A484B25B435A700F948F9 /* 반복문10.swift */,
+				369A485025B438D900F948F9 /* 조건문14.swift */,
 			);
 			name = "반복문";
 			path = "반복문";
@@ -154,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3670012825B337DA0008B887 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
