@@ -8,7 +8,7 @@
 import Foundation
 
 
-while true {
+outer : while true {
     
     print("앞면(1) 또는 뒷면(0): ", terminator : "")
     var input2 = Int(readLine()!)! // 옵셔널 인트가 아닌 정수 인트로 저장 돼
@@ -35,9 +35,14 @@ while true {
     
     var input : String
     
-    label : gg repeat{
+    //이따가 반복문에 레이블 달아서 이 문제 해결해보기
+    
+   repeat{
         print("계속하시겠습니까? y/n")
         input = readLine()!
-    } while input=="n"
+        if input == "n"{
+            break outer
+        }
+    } while true
 
 }
