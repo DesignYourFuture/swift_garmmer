@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36BDCB9D25BB2331005E8664 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDCB9C25BB2331005E8664 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		367000F325B2DE9E0008B887 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -62,6 +66,9 @@
 		36A2B93C25B570520019F426 /* 함수4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "함수4.swift"; sourceTree = "<group>"; };
 		36A2B94125B573090019F426 /* 함수6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "함수6.swift"; sourceTree = "<group>"; };
 		36A2B94525B574A40019F426 /* 함수7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "함수7.swift"; sourceTree = "<group>"; };
+		36BDCB8C25BB105B005E8664 /* 열거형연습1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "열거형연습1.swift"; sourceTree = "<group>"; };
+		36BDCB9225BB1D14005E8664 /* 열거형활용.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "열거형활용.swift"; sourceTree = "<group>"; };
+		36BDCB9C25BB2331005E8664 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,8 @@
 		367000F725B2DE9E0008B887 /* swift_garmmer */ = {
 			isa = PBXGroup;
 			children = (
+				36BDCB9B25BB2322005E8664 /* 프로토콜 */,
+				36BDCB8B25BB1048005E8664 /* 열거형 */,
 				368EF67225B7222100BB17A1 /* 구조체와클래스 */,
 				36A2B91925B54B620019F426 /* 함수 */,
 				3670012125B336A80008B887 /* 반복문 */,
@@ -176,6 +185,25 @@
 			path = "함수";
 			sourceTree = "<group>";
 		};
+		36BDCB8B25BB1048005E8664 /* 열거형 */ = {
+			isa = PBXGroup;
+			children = (
+				36BDCB8C25BB105B005E8664 /* 열거형연습1.swift */,
+				36BDCB9225BB1D14005E8664 /* 열거형활용.swift */,
+			);
+			name = "열거형";
+			path = "열거형";
+			sourceTree = "<group>";
+		};
+		36BDCB9B25BB2322005E8664 /* 프로토콜 */ = {
+			isa = PBXGroup;
+			children = (
+				36BDCB9C25BB2331005E8664 /* main.swift */,
+			);
+			name = "프로토콜";
+			path = "프로토콜";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BDCB9D25BB2331005E8664 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
