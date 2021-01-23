@@ -69,3 +69,26 @@ struct RubyNewService : NewMethodProtocol {
  외부 매개변수 명은 일치시켜야 한다
  그러나 내부 매개변수 명은 다르게 할 수 있다.
  */
+
+protocol MService {
+    mutating func execute (cmd : String)
+    func showPort(p:Int) -> String
+}
+
+struct RubyMservice : MService {
+    var paramCommand : String?
+    
+    mutating func execute(cmd : String) {
+        self.paramCommand = cmd
+        if cmd == "start"{
+            print("실행합니다.")
+        }
+    }
+    
+    func showPort(p: Int) -> String {
+        return "Port : \(p), now command : \(self.paramCommand)"
+    }
+}
+
+// 프로퍼티를 변경할 때는 뮤테이팅 키워드 필요하다
+// 그러나 클래스에서는 없어도 되는데 콜 오브 레퍼런스라서 그렇다
